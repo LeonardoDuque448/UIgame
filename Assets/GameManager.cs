@@ -14,38 +14,45 @@ public class GameManager : MonoBehaviour
 
     public TMP_Text[] optionLabel;
     public QuestionData[] questions;
+
+    private int CurrentQuestionIndex; 
     // Start is called before the first frame update
     void Start()
     {
         scoreLabel.text = "0";
 
         questionLabel.text = questions[0].question;
-        for (int i = 0; i < questions[CurrenteQuestionIndex].options.length; i++)
+
+        optionLabel[0].text = questions[0].options[0].option;
+
+        for (int i = 0; i < questions[0].options.Length; i++)
         {
-            optionLabel[i].text = questions[CurrenteQuestionIndex].options[i].option;
+
+            optionLabel[i].text = questions[0].options[i].option;
+
         }
     }
 
     // Update is called once per frame
-   private void Update()
+    private void Update()
     {
-        timebar.fillamount -= Time.deltaTime / totaltime;
+        timebar.fillAmount -= Time.deltaTime / TotalTime;
     }
     public void NextQuestion()
     {
-        CurrenteQuestionIndex++;
-        questionLabel.text = questions[CurrenteQuestionIndex].question;
+        CurrentQuestionIndex++;
+        questionLabel.text = questions[CurrentQuestionIndex].question;
 
-        for (int i = 0; i < questions[CurrenteQuestionIndex].options.length; i++)
+        for (int i = 0; i < questions[CurrentQuestionIndex].options.Length; i++)
         {
-            optionLabel[i].text = questions[CurrenteQuestionIndex].options[i].option;
+            optionLabel[i].text = questions[CurrentQuestionIndex].options[i].option;
         }
-    
+
     }
 }
 
 [System.Serializable]
-public struct QuestionData 
+public struct QuestionData
 {
     public string question;
     public Option[] options;
