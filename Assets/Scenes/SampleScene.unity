@@ -133,6 +133,21 @@ PrefabInstance:
       propertyPath: m_Transition
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1591853887}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OptionSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8075091507740225172, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -619,8 +634,53 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
       propertyPath: m_Transition
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1591853887}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OptionSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8075091507740225172, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
         type: 3}
@@ -1043,6 +1103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5987c5f32646e5047ac131cc866813c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorelabelanimator: {fileID: 1973068820}
   timebar: {fileID: 1522550257}
   TotalTime: 10
   scoreLabel: {fileID: 1973068818}
@@ -1053,22 +1114,46 @@ MonoBehaviour:
   - {fileID: 565264644}
   - {fileID: 1314871520}
   questions:
-  - question: "\xBFQue es un Ferniz?"
+  - question: "\xBFCual es el procesador del huawei mate 30?"
     options:
-    - option: Ferniz
+    - option: Hi silicon kirin 980
       isCorrect: 1
-    - option: Furro
+    - option: Hi silicon kirin 970
       isCorrect: 0
-    - option: una naranja
+    - option: Hi silicon kirin 659
       isCorrect: 0
-    - option: aguacate golpeado
+    - option: Hi silicon kirin 990
+      isCorrect: 1
+  - question: "\xBFEn warframe que elementos forman viral?"
+    options:
+    - option: fuego, veneno
       isCorrect: 0
-  - question: 
-    options: []
-  - question: 
-    options: []
-  - question: 
-    options: []
+    - option: hielo, veneno
+      isCorrect: 1
+    - option: electrico, veneno
+      isCorrect: 0
+    - option: hielo, fuego
+      isCorrect: 0
+  - question: "\xBFCual es la serie de gama media de los chips de snap dragon?"
+    options:
+    - option: La serie 700
+      isCorrect: 0
+    - option: La serie 400
+      isCorrect: 0
+    - option: La serie 600
+      isCorrect: 1
+    - option: La serie 800
+      isCorrect: 0
+  - question: "\xBFCual fue el primer warframe en la histroria de Warframe?"
+    options:
+    - option: Excalibur
+      isCorrect: 0
+    - option: Volt
+      isCorrect: 0
+    - option: Loki
+      isCorrect: 0
+    - option: Mag
+      isCorrect: 1
 --- !u!4 &1591853888
 Transform:
   m_ObjectHideFlags: 0
@@ -1094,6 +1179,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Transition
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1591853887}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OptionSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8075091507740225172, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
         type: 3}
@@ -1434,6 +1534,7 @@ GameObject:
   - component: {fileID: 1973068817}
   - component: {fileID: 1973068819}
   - component: {fileID: 1973068818}
+  - component: {fileID: 1973068820}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1450,14 +1551,14 @@ RectTransform:
   m_GameObject: {fileID: 1973068816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3648, y: 1.3648, z: 1.3648}
   m_Children: []
   m_Father: {fileID: 1090278229}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.013, y: -6.4}
+  m_AnchoredPosition: {x: 26, y: -10}
   m_SizeDelta: {x: 155.97418, y: 55.964897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1973068818
@@ -1547,7 +1648,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 12.8951435, y: 0, z: 50.492107, w: 0}
+  m_margin: {x: 12.8951435, y: 0, z: 49.175274, w: 0}
   m_textInfo:
     textComponent: {fileID: 1973068818}
     characterCount: 4
@@ -1581,6 +1682,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973068816}
   m_CullTransparentMesh: 0
+--- !u!95 &1973068820
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973068816}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43759704c52ba1442acf9d31cf70dd98, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2143471698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,6 +1864,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1719054142}
     m_Modifications:
+    - target: {fileID: 902512424705382362, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1591853887}
     - target: {fileID: 8075091508028888313, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
         type: 3}
       propertyPath: m_Name
@@ -1853,36 +1978,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8075091508028888314, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8075091508028888314, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8075091508028888314, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8075091508028888315, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.60012805
-      objectReference: {fileID: 0}
-    - target: {fileID: 8075091508028888315, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 8075091508028888315, guid: 758a722ef2aa7b2448f763c9ecc1c5c0,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.49803922
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 758a722ef2aa7b2448f763c9ecc1c5c0, type: 3}
